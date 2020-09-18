@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
-import matplotlib.pyplot as plt
+
 from mpl_toolkits.mplot3d import Axes3D
-// charged particle in a magnetic and electric field that are orthogonal
+# charged particle in a magnetic and electric field that are orthogonal
 cm = 4
 ce = 4.2
 z=0
