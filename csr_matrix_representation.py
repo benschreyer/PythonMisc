@@ -25,14 +25,19 @@ def csr_write(row,col,val,csr_col, csr_val, csr_rowC):
 
 
 
-matrix = [[5,0,0,0],[0,8,0,0],[0,0,3,0],[0,6,0,0]] #access [ROW][COLUMN]
+matrix = [[10,20,0,0,0,0],[0,30,0,40,0,0],[0,0,50,60,70,0],[0,0,0,0,0,80]] #access [ROW][COLUMN]
 csr_columns = []
 csr_rowCounts = [0,0,0,0,0]
 csr_values = []
 
 for i in range(4):
-  for j in range(4):
+  for j in range(6):
     csr_write(i,j,matrix[i][j],csr_columns,csr_values,csr_rowCounts)
+print(csr_values)
+print(csr_columns)
+print(csr_rowCounts)
+print("INSERTION")
+csr_write(0,2,-3,csr_columns,csr_values,csr_rowCounts)
 print(csr_values)
 print(csr_columns)
 print(csr_rowCounts)
